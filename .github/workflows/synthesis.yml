@@ -1,0 +1,11 @@
+name: Generic RTL synthesis
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  synthesis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install synthesizer
+        run: sudo apt-get update -qq && sudo apt-get install -y yosys
+      - name: Synthesize event_timestamp4
+        run: yosys -Q -T -p 'read_verilog -sv rtl/event_timestamp4.sv; hierarchy -check -top event_timestamp4; synth -top event_timestamp4; stat'
