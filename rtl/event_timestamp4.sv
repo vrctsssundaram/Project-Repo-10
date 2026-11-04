@@ -10,7 +10,6 @@ module event_timestamp4 (
     output reg  [31:0] overrun_events,
     output reg  [63:0] time_counter
 );
-    timeunit 1ns; timeprecision 1ps;
     reg [3:0] event_previous;
     reg [63:0] captured_time [0:3];
     reg [3:0] pending_next;
