@@ -10,4 +10,4 @@
 | `overrun_events[31:0]` | Saturation/overwrite indication counter |
 | `time_counter[63:0]` | Free-running timestamp counter |
 
-Time units are source-clock periods, not synchronized wall-clock time.
+Timestamp resolution is one local event-clock cycle.

@@ -17,6 +17,6 @@ make synth
 
 Design sources are in `rtl/`, directed tests in `tb/`, and interface, architecture, testing and measured results in `docs/`.
 
-**Scope:** Input event edges need CDC synchronization if generated outside the clock domain; no deep event queue.
+**Architecture:** Four-source synchronous event timestamp collector with one pending entry per source.
 
 Project owner: Sundaram S S.
