@@ -1,4 +1,4 @@
-# EventChrono-4
+# Four-source timestamped event collector
 
 Four-source event edge timestamp and priority aggregation subsystem.
 
